@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 csv_file_path = 'tlist140.csv'
 data = pd.read_csv(csv_file_path)
 
+
 # Function to filter the data based on the 'Unique to Region' column
 def filter_unique_to_region(data):
     return data[(data['Unique to Region'].str.lower() != 'no') & 
@@ -29,6 +30,18 @@ def color_text(val):
 
 # Streamlit App
 st.set_page_config(page_title="MENA Region Games", layout="wide")
+
+# Enable dark mode
+st.markdown("<style>body {background-color: #212121;}</style>", unsafe_allow_html=True)
+
+# Custom CSS to hide the Streamlit menu and footer
+hide_menu_style = """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    </style>
+    """
+st.markdown(hide_menu_style, unsafe_allow_html=True)
 
 # Sidebar Navigation
 page = st.sidebar.radio("Select Page", ["Main Page", "Summary Brief", "Additional Brief"])
