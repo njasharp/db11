@@ -60,7 +60,7 @@ if page == "Main Page":
     st.bar_chart(success_metrics_counts)
     
     # Create a new table for entries with any answer except 'no' in the "Unique to Region" column
-    st.subheader("Top 150 Android Full List - Unique & Hyper-Localized Success")
+    st.subheader("Top 200 Android Full List - Unique & Hyper-Localized Success")
     st.dataframe(data)
 
 # PDF Pages
@@ -200,4 +200,4 @@ elif page == "Additional Brief":
 
     # Download button for the additional brief PDF
     st.download_button("Download PDF", additional_brief_pdf, file_name="tlist-sum-briefadd.pdf")
-st.info("build by dw  v1")
+st.info("build by dw  v1 7/10/24")
