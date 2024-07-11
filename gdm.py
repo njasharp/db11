@@ -83,12 +83,14 @@ elif page == "Summary Brief":
 
     # Display the summary brief as markdown text
     st.markdown("""
+    
     ### Title: Emphasize Summarized MENA Only Regionally Unique Games That Are Succeeding 
     #### Subtitle: Highlighting Success Factors and Unique Features
+    <span style="color: #FF9900;">        
     
     **Introduction:**
     In the MENA region, games that incorporate local culture, traditions, and preferences tend to resonate well with players. This summary highlights some of the top regionally unique games and the factors contributing to their success.
-    
+
     **Revenge of Sultans:**
     - **Description:** A strategy game set in a historical Arabian context.
     - **Region:** Predominantly popular in Saudi Arabia and UAE.
@@ -112,7 +114,10 @@ elif page == "Summary Brief":
     - **Why Unique:** Combines gaming with educational content relevant to local religious practices.
     - **Hyper-Localized Success:** High engagement during religious periods such as Ramadan.
     - **Success Metrics:** Consistent daily active users and high engagement during peak periods.
-    
+    </span>
+    """, unsafe_allow_html=True)
+
+    st.markdown("""            
     **Arabian Nights: The Adventure of Sindbad:**
     - **Description:** A narrative-driven adventure game based on Arabian folklore.
     - **Unique Features:** Highlights the importance of cultural relevance in game development.
@@ -172,7 +177,7 @@ elif page == "Additional Brief":
     # Display the additional brief as markdown text
     st.markdown("""
     ### Trends in Regionally Unique Games
-    
+    <span style="color: #FF9900;">  
     **1. Cultural Relevance**
     - Games that incorporate local culture, folklore, and history resonate with players in the region, providing a sense of ownership and trust.
     
@@ -181,7 +186,10 @@ elif page == "Additional Brief":
     
     **3. Regional Servers and Localization**
     - Games that offer regional servers and localized content are successful, highlighting the importance of catering to local preferences and language support.
-    
+    </span>
+    """, unsafe_allow_html=True)
+
+    st.markdown("""
     ### Hyper-Localized Game Themes
     
     **1. Local Cultural Heritage**
