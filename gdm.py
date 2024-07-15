@@ -84,11 +84,11 @@ elif page == "Summary Brief":
     # Display the summary brief as markdown text
     st.markdown("""
     
-    ### Title: Emphasize Summarized MENA Only Regionally Unique Games That Are Succeeding 
-    #### Subtitle: Highlighting Success Factors and Unique Features
+    ### Emphasize Summarized MENA Only Regionally Unique Games That Are Succeeding 
+    #### Highlighting Success Factors and Unique Features
     <span style="color: #FF9900;">        
     
-    **Introduction:**
+   
     In the MENA region, games that incorporate local culture, traditions, and preferences tend to resonate well with players. This summary highlights some of the top regionally unique games and the factors contributing to their success.
 
     **Revenge of Sultans:**
