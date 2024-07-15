@@ -221,4 +221,4 @@ elif page == "Additional Brief":
 
     # Download button for the additional brief PDF
     st.download_button("Download PDF", additional_brief_pdf, file_name="tlist-sum-briefadd.pdf")
-st.info("build by dw  v1 7/10/24")
+st.info("build by dw  v1 7/15/24")
