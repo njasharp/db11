@@ -49,7 +49,7 @@ st.markdown(hide_menu_style, unsafe_allow_html=True)
 
 # Sidebar Navigation
 page = st.sidebar.radio("Select Page", ["Main Page", "Summary Brief", "Additional Brief"])
-st.sidebar.download_button("MENA info source - Download PDF", MENA_sum1_pdf, file_name="MENA_sum1.pdf")
+st.sidebar.download_button("MENA research - Download PDF", MENA_sum1_pdf, file_name="MENA_sum1.pdf")
 
 # Main Page
 if page == "Main Page":
