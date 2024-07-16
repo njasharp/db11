@@ -79,10 +79,10 @@ if page == "Main Page":
     st.bar_chart(success_metrics_counts)
     
     # Create a new table for entries with any answer except 'no' in the "Unique to Region" column
-    st.subheader("Top 200 Android Full List - Unique & Hyper-Localized Success")
+    st.subheader("Top Android - Unique & Hyper-Localized Success")
     st.dataframe(data)
     st.image("top_chart.PNG")
-    st.subheader("Game details data Full List - ")
+    st.subheader("Addtional Game Details List")
     st.dataframe(data1)
 # PDF Pages
 elif page == "Summary Brief":
