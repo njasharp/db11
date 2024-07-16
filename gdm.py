@@ -6,7 +6,8 @@ import matplotlib.pyplot as plt
 csv_file_path = 'tlist140.csv'
 data = pd.read_csv(csv_file_path)
 
-
+csv_file_path1 = 't200-full.csv'
+data1 = pd.read_csv(csv_file_path1)
 # Function to filter the data based on the 'Unique to Region' column
 def filter_unique_to_region(data):
     return data[(data['Unique to Region'].str.lower() != 'no') & 
@@ -22,6 +23,9 @@ with open("tlist-sum-brief.pdf", "rb") as f:
 
 with open("tlist-sum-briefadd.pdf", "rb") as f:
     additional_brief_pdf = f.read()
+
+with open("MENA_sum1.pdf", "rb") as f:
+    MENA_sum1_pdf = f.read()
 
 # Function to apply text color based on conditions
 def color_text(val):
@@ -45,6 +49,7 @@ st.markdown(hide_menu_style, unsafe_allow_html=True)
 
 # Sidebar Navigation
 page = st.sidebar.radio("Select Page", ["Main Page", "Summary Brief", "Additional Brief"])
+st.sidebar.download_button("MENA info source - Download PDF", MENA_sum1_pdf, file_name="MENA_sum1.pdf")
 
 # Main Page
 if page == "Main Page":
@@ -75,7 +80,8 @@ if page == "Main Page":
     # Create a new table for entries with any answer except 'no' in the "Unique to Region" column
     st.subheader("Top 200 Android Full List - Unique & Hyper-Localized Success")
     st.dataframe(data)
-
+    st.subheader("Game details data Full List - ")
+    st.dataframe(data1)
 # PDF Pages
 elif page == "Summary Brief":
     st.title("Summary Brief")
