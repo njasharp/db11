@@ -51,6 +51,7 @@ st.markdown(hide_menu_style, unsafe_allow_html=True)
 page = st.sidebar.radio("Select Page", ["Main Page", "Summary Brief", "Additional Brief"])
 st.sidebar.download_button("MENA research - Download PDF", MENA_sum1_pdf, file_name="MENA_sum1.pdf")
 
+
 # Main Page
 if page == "Main Page":
     st.title("Emphasize Summarized MENA Only Regionally Unique Games That Are Succeeding")
@@ -80,6 +81,7 @@ if page == "Main Page":
     # Create a new table for entries with any answer except 'no' in the "Unique to Region" column
     st.subheader("Top 200 Android Full List - Unique & Hyper-Localized Success")
     st.dataframe(data)
+    st.image("top_chart.PNG")
     st.subheader("Game details data Full List - ")
     st.dataframe(data1)
 # PDF Pages
