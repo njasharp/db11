@@ -60,6 +60,8 @@ if page == "Main Page":
     # Display the filtered CSV data
     st.dataframe(filtered_data.style.applymap(color_text, subset=['Unique to Region']))
     
+    st.image("pic1.PNG")
+    st.image("pic2.PNG")
     # Generate charts from the filtered data
     st.subheader("Charts")
     
