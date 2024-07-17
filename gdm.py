@@ -232,4 +232,8 @@ elif page == "Additional Brief":
 
     # Download button for the additional brief PDF
     st.download_button("Download PDF", additional_brief_pdf, file_name="tlist-sum-briefadd.pdf")
+
+
+st.image("pic3.PNG")
+st.image("pic4.PNG")    
 st.info("build by dw  v1 7/16/24")
