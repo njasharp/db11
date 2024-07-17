@@ -87,7 +87,7 @@ if page == "Main Page":
     st.image("top_chart.PNG")
     st.subheader("Addtional Game Details List")
     st.dataframe(data1)
-    
+    st.image("pic7.png")
     st.write("Android charts - appfigures.com / data.ai")
     st.image("pic3.PNG")
     st.image("pic4.PNG") 
@@ -184,7 +184,7 @@ elif page == "Summary Brief":
     **Conclusion:**
     The success of games in the MENA region is highly dependent on their ability to incorporate local cultural elements, offer localized content, and provide strong social features. By focusing on these factors, game developers can create more targeted and appealing games for this market.
     """)
-    st.image("pic7.png")
+    
     # Download button for the summary brief PDF
     st.download_button("Download PDF", summary_brief_pdf, file_name="tlist-sum-brief.pdf")
 
