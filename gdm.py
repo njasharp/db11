@@ -50,7 +50,7 @@ st.markdown(hide_menu_style, unsafe_allow_html=True)
 # Sidebar Navigation
 page = st.sidebar.radio("Select Page", ["Main Page", "Summary Brief", "Additional Brief"])
 st.sidebar.download_button("MENA research - Download PDF", MENA_sum1_pdf, file_name="MENA_sum1.pdf")
-st.sidebar.warning("based on UAE TOP 50 FREE, PAID & GROSSING 6/30 / Free, New Free, PAID 7/15")
+st.sidebar.warning("based on UAE TOP 50 FREE, PAID & GROSSING 6/30 / FREE, NEW FREE, PAID 7/15")
 
 # Main Page
 if page == "Main Page":
@@ -232,4 +232,4 @@ elif page == "Additional Brief":
 
     # Download button for the additional brief PDF
     st.download_button("Download PDF", additional_brief_pdf, file_name="tlist-sum-briefadd.pdf")
-st.info("build by dw  v1 7/15/24")
+st.info("build by dw  v1 7/16/24")
