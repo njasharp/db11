@@ -188,13 +188,13 @@ elif page == "Additional Brief":
     st.markdown("""
     ### Trends in Regionally Unique Games
     <span style="color: #FF9900;">  
-    **1. Cultural Relevance**
+    ** Cultural Relevance**
     - Games that incorporate local culture, folklore, and history resonate with players in the region, providing a sense of ownership and trust.
     
-    **2. Localized Board Games**
+    **1. Localized Board Games**
     - Traditional board games with an online multiplayer twist are popular, indicating a preference for social, family-friendly entertainment.
     
-    **3. Regional Servers and Localization**
+    **2. Regional Servers and Localization**
     - Games that offer regional servers and localized content are successful, highlighting the importance of catering to local preferences and language support.
     </span>
     """, unsafe_allow_html=True)
