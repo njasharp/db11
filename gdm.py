@@ -266,6 +266,6 @@ elif page == "MENA Research":
     pdf_document.close()
 
     # Display the extracted text
-    st.text_area("Extracted Text", text, height=500)
+    st.text_area("Extracted pdf Text", text, height=500)
 
 st.info("build by dw  v1 7/17/24")
