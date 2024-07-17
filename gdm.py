@@ -184,7 +184,7 @@ elif page == "Summary Brief":
     **Conclusion:**
     The success of games in the MENA region is highly dependent on their ability to incorporate local cultural elements, offer localized content, and provide strong social features. By focusing on these factors, game developers can create more targeted and appealing games for this market.
     """)
-    st.image("pic3.PNG")
+    st.image("pic7.PNG")
     # Download button for the summary brief PDF
     st.download_button("Download PDF", summary_brief_pdf, file_name="tlist-sum-brief.pdf")
 
