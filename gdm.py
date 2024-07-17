@@ -86,8 +86,12 @@ if page == "Main Page":
     st.image("top_chart.PNG")
     st.subheader("Addtional Game Details List")
     st.dataframe(data1)
+    st.write("Andriod charts - appfigures.com / data.ai")
     st.image("pic3.PNG")
     st.image("pic4.PNG") 
+    st.write("Ios charts - appfigures.com / data.ai")
+    st.image("pic5.PNG")
+    st.image("pic6.PNG") 
 # PDF Pages
 elif page == "Summary Brief":
     st.title("Summary Brief")
