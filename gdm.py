@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
+import fitz  # PyMuPDF
 
 # Load the CSV data
 csv_file_path = 'tlist140.csv'
@@ -48,7 +49,7 @@ hide_menu_style = """
 st.markdown(hide_menu_style, unsafe_allow_html=True)
 
 # Sidebar Navigation
-page = st.sidebar.radio("Select Page", ["Main Page", "Summary Brief", "Additional Brief"])
+page = st.sidebar.radio("Select Page", ["Main Page", "Summary Brief", "Additional Brief", "MENA Research"])
 st.sidebar.download_button("MENA research - Download PDF", MENA_sum1_pdf, file_name="MENA_sum1.pdf")
 st.sidebar.warning("based on UAE TOP 50 FREE, PAID, GROSSING - 6/30 & FREE, NEW FREE, PAID - 7/15")
 
@@ -239,5 +240,32 @@ elif page == "Additional Brief":
     st.download_button("Download PDF", additional_brief_pdf, file_name="tlist-sum-briefadd.pdf")
 
 
-   
+elif page == "MENA Research":
+    st.title("MENA Research")
+    st.subheader("More Insights and Recommendations")
+
+        # Open the PDF file with PyMuPDF
+    with open("MENA_sum1.pdf", "rb") as file:
+        pdf_document = fitz.open(stream=file.read(), filetype="pdf")
+
+    # Initialize a variable to store the text
+    text = ''
+
+    # Loop through each page in the PDF file
+    for page_num in range(len(pdf_document)):
+        # Get the current page
+        page = pdf_document.load_page(page_num)
+
+        # Extract the text from the page
+        page_text = page.get_text()
+
+        # Add the text to the total text
+        text += page_text
+
+    # Close the PDF file
+    pdf_document.close()
+
+    # Display the extracted text
+    st.text_area("Extracted Text", text, height=400)
+
 st.info("build by dw  v1 7/16/24")
