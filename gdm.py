@@ -86,7 +86,8 @@ if page == "Main Page":
     st.image("top_chart.PNG")
     st.subheader("Addtional Game Details List")
     st.dataframe(data1)
-
+    st.image("pic3.PNG")
+    st.image("pic4.PNG") 
 # PDF Pages
 elif page == "Summary Brief":
     st.title("Summary Brief")
@@ -234,6 +235,5 @@ elif page == "Additional Brief":
     st.download_button("Download PDF", additional_brief_pdf, file_name="tlist-sum-briefadd.pdf")
 
 
-st.image("pic3.PNG")
-st.image("pic4.PNG")    
+   
 st.info("build by dw  v1 7/16/24")
