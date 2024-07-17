@@ -268,4 +268,4 @@ elif page == "MENA Research":
     # Display the extracted text
     st.text_area("Extracted Text", text, height=400)
 
-st.info("build by dw  v1 7/16/24")
+st.info("build by dw  v1 7/17/24")
