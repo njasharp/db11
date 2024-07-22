@@ -88,6 +88,7 @@ if page == "Main Page":
     st.subheader("Addtional Game Details List")
     st.dataframe(data1)
     st.image("pic7.png")
+    st.image("pic8.png")
     st.write("Android charts - appfigures.com / data.ai")
     st.image("pic3.PNG")
     st.image("pic4.PNG") 
@@ -269,4 +270,4 @@ elif page == "MENA Research":
     # Display the extracted text
     st.text_area("Extracted pdf Text", text, height=500)
 
-st.info("build by dw  v1 7/17/24")
+st.info("build by dw  v1.1 7/22/24")
