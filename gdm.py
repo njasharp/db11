@@ -88,7 +88,7 @@ if page == "Main Page":
     st.subheader("Addtional Game Details List")
     st.dataframe(data1)
     st.image("pic7.png")
-    st.image("pic8.png")
+    st.image("pic8.PNG")
     st.write("Android charts - appfigures.com / data.ai")
     st.image("pic3.PNG")
     st.image("pic4.PNG") 
