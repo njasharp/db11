@@ -27,7 +27,8 @@ with open("tlist-sum-briefadd.pdf", "rb") as f:
 
 with open("MENA_sum1.pdf", "rb") as f:
     MENA_sum1_pdf = f.read()
-
+with open("short_list.pdf", "rb") as f:
+    short_list_pdf = f.read()
 # Function to apply text color based on conditions
 def color_text(val):
     color = 'green' if val.lower() == 'yes' else 'orange'
@@ -89,12 +90,15 @@ if page == "Main Page":
     st.dataframe(data1)
     st.image("pic7.png")
     st.image("pic8.PNG")
+        # Download button for the summary brief PDF
+    st.download_button("Download PDF", short_list_pdf, file_name="short_list.pdf")
     st.write("Android charts - appfigures.com / data.ai")
     st.image("pic3.PNG")
     st.image("pic4.PNG") 
     st.write("Ios charts - appfigures.com / data.ai")
     st.image("pic5.PNG")
     st.image("pic6.PNG") 
+    
 # PDF Pages
 elif page == "Summary Brief":
     st.title("Summary Brief")
