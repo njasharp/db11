@@ -92,6 +92,7 @@ if page == "Main Page":
     st.image("pic7.png")
     st.write("Short list - hyper localized games")
     st.image("pic8.PNG")
+    st.image("pic8a.PNG")
         # Download button for the summary brief PDF
     st.download_button("Download PDF - short list", short_list_pdf, file_name="short_list.pdf")
     st.write("Android charts - appfigures.com / data.ai")
@@ -276,4 +277,4 @@ elif page == "MENA Research":
     # Display the extracted text
     st.text_area("Extracted pdf Text", text, height=500)
 
-st.info("build by dw  v1.1 7/22/24")
+st.info("build by dw  v1.2 7/24/24")
